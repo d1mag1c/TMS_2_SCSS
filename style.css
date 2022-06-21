@@ -1,0 +1,382 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+.features .block__h4,
+section p,
+button,
+.work .work__block1 p,
+.features .features__block > p,
+.header__nav a {
+  font-family: "Raleway";
+  letter-spacing: 0em;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 75px;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 35px;
+}
+
+.features .block__h4, section p, button,
+h4 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.work .work__block1 p, .features .features__block > p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.header__nav a {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 15px;
+}
+
+.work .work__block1:hover .work__info, .features .block__h4, .header__nav a, .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.features .features__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  text-transform: uppercase;
+}
+
+button {
+  background: rgb(255, 67, 67);
+  width: 370px;
+  height: 80px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+button:hover {
+  background: rgb(231, 20, 20);
+}
+button:active {
+  background: rgb(255, 67, 67);
+  box-shadow: 4px 4px 30px #FF4343;
+}
+
+body {
+  max-width: 1510px;
+}
+
+main {
+  background: linear-gradient(rgba(37, 43, 73, 0.8), rgba(37, 43, 73, 0.8)), url(img/banner.jpg) no-repeat center;
+  background-size: auto 100%;
+  min-height: 747px;
+  padding: 0 20px;
+  color: white;
+}
+
+.header {
+  max-width: 1170px;
+  border-bottom: 1px solid rgb(186, 187, 197);
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.header__nav {
+  display: flex;
+}
+.header__nav a {
+  width: 134px;
+  height: 100px;
+  color: white;
+}
+.header__nav a:hover {
+  border-bottom: 3px solid rgb(186, 187, 197);
+}
+.header__nav a:active {
+  border-bottom: 3px solid rgb(231, 20, 20);
+  color: rgb(231, 20, 20);
+}
+
+section {
+  max-width: 1170px;
+  text-align: center;
+  margin: 129px auto 0 auto;
+}
+section p {
+  margin: 31.4px 83px 80px 83px;
+}
+section h1 {
+  margin: 0 30px;
+}
+
+.menu,
+span {
+  display: none;
+}
+
+@media screen and (max-width: 1150px) {
+  h1 {
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .header__nav a {
+    width: 112px;
+  }
+
+  section p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    margin: 62px 83px 89px 83px;
+  }
+
+  button {
+    width: 314px;
+  }
+}
+@media screen and (max-width: 780px) {
+  h1 {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  main {
+    min-height: 574px;
+    padding: 0;
+    background: linear-gradient(rgba(37, 43, 73, 0.8), rgba(37, 43, 73, 0.8)), url(img/menu.jpg) no-repeat center;
+    background-size: 100% 100%;
+  }
+
+  .header {
+    border: none;
+    height: 56px;
+  }
+  .header img {
+    width: 103px;
+    height: 15px;
+    margin-left: 20px;
+  }
+
+  .header__nav {
+    display: none;
+  }
+
+  section {
+    margin-top: 50px;
+  }
+  section h1 {
+    margin: 0 19px;
+  }
+  section p {
+    margin: 32px 35px 49px 35px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  button {
+    width: 280px;
+    height: 60px;
+  }
+
+  .menu,
+span {
+    display: block;
+  }
+
+  .header:target .header__nav {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 56px;
+    width: 100%;
+    height: 517px;
+    background: linear-gradient(rgba(37, 43, 73, 0.8), rgba(37, 43, 73, 0.8)), url(img/menu.jpg) no-repeat center;
+    background-size: 100% 100%;
+  }
+  .header:target .header__nav a {
+    height: 63px;
+    justify-content: start;
+    margin-left: 20px;
+  }
+
+  .header:target section {
+    display: none;
+  }
+
+  .menu__button_close {
+    display: none;
+  }
+
+  .header:target .menu__button {
+    display: none;
+  }
+  .header:target .menu__button_close {
+    display: flex;
+  }
+}
+.features {
+  margin: 116px auto;
+  max-width: 1170px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.features .features__block {
+  max-width: 370px;
+  height: 305px;
+  margin: 0 auto;
+}
+.features .features__block img {
+  width: 100px;
+}
+.features .features__block > p {
+  text-align: center;
+  color: rgb(108, 114, 121);
+}
+.features .features__block:nth-of-type(1n+4) {
+  margin-top: 88px;
+}
+.features .block__h4 {
+  font-weight: 900;
+  text-transform: uppercase;
+  height: 72px;
+}
+
+@media screen and (max-width: 1150px) {
+  .features {
+    margin: 78px auto;
+  }
+  .features .features__block {
+    max-width: 315px;
+    height: 237px;
+  }
+  .features .features__block img {
+    width: 84px;
+  }
+  .features .features__block > p {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .features .features__block:nth-of-type(1n+4) {
+    margin-top: 49px;
+  }
+  .features .block__h4 {
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .features {
+    margin: 40px auto 34px auto;
+  }
+  .features .features__block {
+    max-width: 280px;
+    height: 223px;
+    margin-top: 41px;
+  }
+  .features .features__block img {
+    width: 75px;
+  }
+}
+.work {
+  max-width: 1510px;
+  max-height: 678px;
+}
+.work .work__block {
+  display: flex;
+}
+.work .work__block1 {
+  position: relative;
+}
+.work .work__block1 .work__info {
+  display: none;
+}
+.work .work__block1:hover .work__info {
+  position: absolute;
+  background: rgba(255, 67, 67, 0.8);
+  border: 2px solid #FFFFFF;
+  z-index: 2;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  color: white;
+  cursor: pointer;
+}
+.work .work__block1:active .work__info {
+  background: rgba(185, 12, 12, 0.8);
+  border: 2px solid #FFFFFF;
+}
+.work .work__block1 h4 {
+  text-transform: uppercase;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+.work img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 1150px) {
+  .work .work__block h4 {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .work .work__block p {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .work {
+    display: flex;
+  }
+  .work .work__block {
+    flex-direction: column;
+    width: 50%;
+  }
+}/*# sourceMappingURL=style.css.map */
