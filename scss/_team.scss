@@ -74,14 +74,15 @@
 
 @media screen and (max-width:780px) {
     .team {
-        flex-direction: column;
+        flex-wrap: wrap;
         margin: 35px auto;
-        width: 280px;
+
 
 
         .team__block {
-            width: 100%;
+            width: 280px;
             margin-bottom: 56px;
+            margin: 0 auto 10px auto;
 
             >img {
                 height: 228px;
@@ -97,5 +98,12 @@
         .team__block:last-of-type {
             margin-bottom: 0;
         }
+    }
+}
+
+@media screen and (max-width:600px) {
+    .team {
+        flex-direction: column;
+        flex-wrap: nowrap;
     }
 }
