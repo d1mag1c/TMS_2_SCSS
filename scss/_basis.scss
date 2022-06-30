@@ -74,14 +74,19 @@ button {
     color: white;
     text-transform: uppercase;
     font-weight: 900;
-
+    transition: 1s;
     &:hover {
         background: rgba(231, 20, 20, 1);
+        box-shadow:  10px 10px #00000094;
+        transition: 1s;
+        transform: translate(-10px, -10px);
     }
 
     &:active {
         background: rgba(255, 67, 67, 1);
-        box-shadow: 4px 4px 30px #FF4343;
+        box-shadow: 0 0 100px 10px rgba(255, 67, 67, 1);
+        transition: 0.1s;
+        transform: translate(0, 0);
     }
 }
 

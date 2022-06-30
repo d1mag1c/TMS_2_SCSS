@@ -9,6 +9,7 @@
         align-items: start;
         justify-content: space-between;
         height: 619px;
+        transition: 1s;
 
         img {
             width: 100%;
@@ -42,6 +43,15 @@
             }
         }
     }
+
+
+}
+
+.team__block:hover {
+    transform: scale(0.95);
+    transition: 1s;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 @media screen and (max-width:1150px) {

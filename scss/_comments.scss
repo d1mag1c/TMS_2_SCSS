@@ -23,11 +23,11 @@
         background: #7E5D6F;
     }
 
-    #comments_input1:checked~#comments_input1,
-    #comments_input2:checked~#comments_input2,
-    #comments_input3:checked~#comments_input3,
-    #comments_input4:checked~#comments_input4,
-    #comments_input5:checked~#comments_input5 {
+    #comments1:checked~#comments_input1,
+    #comments2:checked~#comments_input2,
+    #comments3:checked~#comments_input3,
+    #comments4:checked~#comments_input4,
+    #comments5:checked~#comments_input5 {
         display: flex;
     }
 
