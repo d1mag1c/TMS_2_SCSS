@@ -11,8 +11,13 @@
         height: 619px;
         transition: 1s;
 
+        div {
+            transition: 1s;
+        }
+
         img {
             width: 100%;
+            transition: 1s;
         }
 
         h4 {
@@ -31,20 +36,20 @@
             max-width: 270px;
             @extend %text_h5;
             color: rgba(108, 114, 121, 1);
+            transition: 1s;
         }
 
         .team__icon {
             width: 128px;
             display: flex;
             justify-content: space-between;
+            transition: 1s;
 
             img {
                 width: 39px;
             }
         }
     }
-
-
 }
 
 .team__block:hover {
@@ -52,6 +57,17 @@
     transition: 1s;
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
     cursor: pointer;
+
+}
+
+.team__block:hover div,
+.team__block:hover p {
+    padding: 0 10px;
+    transition: 1s;
+}
+
+.team__block:hover .team__icon {
+    width: 150px;
 }
 
 @media screen and (max-width:1150px) {
@@ -85,14 +101,12 @@
 @media screen and (max-width:780px) {
     .team {
         flex-wrap: wrap;
-        margin: 35px auto;
-
-
+        margin: 10px auto 35px auto;
 
         .team__block {
             width: 280px;
             margin-bottom: 56px;
-            margin: 0 auto 10px auto;
+            margin: 25px auto;
 
             >img {
                 height: 228px;

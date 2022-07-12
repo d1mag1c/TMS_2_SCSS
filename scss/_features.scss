@@ -1,5 +1,5 @@
 .features {
-    margin: 116px auto;
+    margin: 38px auto 116px auto;
     max-width: 1170px;
     display: flex;
     justify-content: space-between;
@@ -10,7 +10,7 @@
         height: 305px;
         @extend %flex_column;
         margin: 0 auto;
-
+        margin-top: 88px;
         img {
             width: 100px;
         }
@@ -20,10 +20,6 @@
             @extend %text_h5;
             color: rgba(108, 114, 121, 1);
         }
-    }
-
-    .features__block:nth-of-type(1n+4) {
-        margin-top: 88px;
     }
 
     .block__h4 {
@@ -37,12 +33,12 @@
 
 @media screen and (max-width:1150px) {
     .features {
-        margin: 78px auto;
+        margin: 29px auto 80px auto;
 
         .features__block {
             max-width: 315px;
             height: 237px;
-
+            margin-top: 49px;
             img {
                 width: 84px;
             }
@@ -51,10 +47,6 @@
                 font-size: 14px;
                 line-height: 16px;
             }
-        }
-
-        .features__block:nth-of-type(1n+4) {
-            margin-top: 49px;
         }
 
         .block__h4 {
