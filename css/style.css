@@ -510,6 +510,37 @@ body {
   display: block;
   border: 1px solid rgb(126, 93, 111);
   border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+}
+.comments:hover label {
+  width: 30px;
+  height: 30px;
+  margin-top: 15px;
+}
+.comments:hover label::before {
+  content: "";
+  font-size: 25px;
+  font-family: "Raleway";
+  position: absolute;
+  top: -12%;
+  left: 28%;
+  color: white;
+}
+.comments:hover label:nth-of-type(1)::before {
+  content: "5";
+}
+.comments:hover label:nth-of-type(2)::before {
+  content: "4";
+}
+.comments:hover label:nth-of-type(3)::before {
+  content: "3";
+}
+.comments:hover label:nth-of-type(4)::before {
+  content: "2";
+}
+.comments:hover label:nth-of-type(5)::before {
+  content: "1";
 }
 .comments input[type=radio]:checked + label {
   background: #7E5D6F;
@@ -574,6 +605,20 @@ body {
     width: 9.5px;
     margin: 10px;
     margin-top: 23px;
+  }
+  .comments:hover label {
+    width: 25px;
+    height: 25px;
+    margin-top: 8px;
+  }
+  .comments:hover label::before {
+    content: "";
+    font-size: 20px;
+    font-family: "Raleway";
+    position: absolute;
+    top: -12%;
+    left: 28%;
+    color: white;
   }
   .comments .comments__block {
     flex-direction: column;

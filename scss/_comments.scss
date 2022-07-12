@@ -17,6 +17,45 @@
         display: block;
         border: 1px solid rgba(126, 93, 111, 1);
         border-radius: 50%;
+        cursor: pointer;
+        position: relative;
+    }
+
+    &:hover label {
+        width: 30px;
+        height: 30px;
+        margin-top: 15px;
+    }
+
+    &:hover label::before {
+        content: '';
+        font-size: 25px;
+        font-family: 'Raleway';
+        position: absolute;
+        top: -12%;
+        left: 28%;
+        color: white;
+
+    }
+
+    &:hover label:nth-of-type(1)::before {
+        content: '5';
+    }
+
+    &:hover label:nth-of-type(2)::before {
+        content: '4';
+    }
+
+    &:hover label:nth-of-type(3)::before {
+        content: '3';
+    }
+
+    &:hover label:nth-of-type(4)::before {
+        content: '2';
+    }
+
+    &:hover label:nth-of-type(5)::before {
+        content: '1';
     }
 
     input[type="radio"]:checked+label {
@@ -107,6 +146,24 @@
             width: 9.5px;
             margin: 10px;
             margin-top: 23px;
+        }
+
+        &:hover label {
+            width: 25px;
+            height: 25px;
+            margin-top: 8px;
+
+        }
+
+        &:hover label::before {
+            content: '';
+            font-size: 20px;
+            font-family: 'Raleway';
+            position: absolute;
+            top: -12%;
+            left: 28%;
+            color: white;
+
         }
 
         .comments__block {
